@@ -1,0 +1,18 @@
+{
+  "description": "Ràng buộc cứng cho agent của bangiao. Planner: chỉ đọc, chỉ được ghi .bangiao/ke-hoach.md. Coder: chặn lệnh phá hủy hoặc không đảo ngược được (rm -r ngoài thư mục build, git reset --hard/clean/push --force, xoá database, deploy, publish) và việc sửa kế hoạch. Không tác động tới luồng chính và các agent khác.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/chan-agent.mjs"],
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "bangiao",
+  "owner": {
+    "name": "loctopublic5",
+    "url": "https://github.com/loctopublic5"
+  },
+  "description": "Marketplace của bangiao — đội agent Lập kế hoạch → Code → Review → Test cho Claude Code.",
+  "plugins": [
+    {
+      "name": "bangiao",
+      "source": "./",
+      "description": "Đội agent Lập kế hoạch → Code → Review → Test, bàn giao qua .bangiao/. Hiện có planner và coder."
+    }
+  ]
+}

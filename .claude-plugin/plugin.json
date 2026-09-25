@@ -1,0 +1,13 @@
+{
+  "name": "bangiao",
+  "displayName": "Bàn giao",
+  "version": "0.2.0",
+  "description": "Đội agent phát triển phần mềm theo dây chuyền Lập kế hoạch → Code → Review → Test, bàn giao qua thư mục .bangiao/. Hiện có planner (khảo sát, hỏi người dùng, viết kế hoạch có task và tiêu chí nghiệm thu) và coder (triển khai kế hoạch, tự kiểm chứng, ghi thay-doi.md).",
+  "author": {
+    "name": "loctopublic5",
+    "url": "https://github.com/loctopublic5"
+  },
+  "homepage": "https://github.com/loctopublic5/Planner",
+  "repository": "https://github.com/loctopublic5/Planner",
+  "keywords": ["planner", "project-manager", "agent", "workflow", "vietnamese", "ke-hoach"]
+}
